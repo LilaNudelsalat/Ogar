@@ -46,27 +46,27 @@ function GameServer() {
         serverMaxConnections: 64, // Maximum amount of connections to the server.
         serverPort: 443, // Server port
         serverGamemode: 0, // Gamemode, 0 = FFA, 1 = Teams
-        serverBots: 0, // Amount of player bots to spawn
+        serverBots: 2, // Amount of player bots to spawn
         serverViewBaseX: 1024, // Base view distance of players. Warning: high values may cause lag
         serverViewBaseY: 592,
         serverStatsPort: 88, // Port for stats server. Having a negative number will disable the stats server.
         serverStatsUpdate: 60, // Amount of seconds per update for the server stats
         serverLogLevel: 1, // Logging level of the server. 0 = No logs, 1 = Logs the console, 2 = Logs console and ip connections
         borderLeft: 0, // Left border of map (Vanilla value: 0)
-        borderRight: 6000, // Right border of map (Vanilla value: 11180.3398875)
+        borderRight: 20000, // Right border of map (Vanilla value: 11180.3398875)
         borderTop: 0, // Top border of map (Vanilla value: 0)
-        borderBottom: 6000, // Bottom border of map (Vanilla value: 11180.3398875)
+        borderBottom: 20000, // Bottom border of map (Vanilla value: 11180.3398875)
         spawnInterval: 20, // The interval between each food cell spawn in ticks (1 tick = 50 ms)
-        foodSpawnAmount: 10, // The amount of food to spawn per interval
+        foodSpawnAmount: 500, // The amount of food to spawn per interval
         foodStartAmount: 100, // The starting amount of food in the map
         foodMaxAmount: 500, // Maximum food cells on the map
-        foodMass: 1, // Starting food size (In mass)
+        foodMass: 50, // Starting food size (In mass)
         virusMinAmount: 10, // Minimum amount of viruses on the map.
         virusMaxAmount: 50, // Maximum amount of viruses on the map. If this amount is reached, then ejected cells will pass through viruses.
         virusStartMass: 100, // Starting virus size (In mass)
         virusFeedAmount: 7, // Amount of times you need to feed a virus to shoot it
-        ejectMass: 12, // Mass of ejected cells
-        ejectMassLoss: 16, // Mass lost when ejecting cells
+        ejectMass: 500, // Mass of ejected cells
+        ejectMassLoss: 0, // Mass lost when ejecting cells
         ejectSpeed: 160, // Base speed of ejected cells
         ejectSpawnPlayer: 50, // Chance for a player to spawn from ejected mass
         playerStartMass: 10, // Starting mass of the player cell.
